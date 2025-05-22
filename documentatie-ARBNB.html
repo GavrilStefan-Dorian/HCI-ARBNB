@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ro" prefix="schema: http://schema.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Documentație ARBNB</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <meta name="author" content="Gavril Ștefan-Dorian, Pintecan Alexandru, Medeleanu Daria, Mihai Răzvan-Ionuț">
+  <meta name="date" content="2025-05-22">
+  <link rel="stylesheet" href="documentatie-ARBNB.css">
+</head>
+<body prefix="schema: http://schema.org">
+  <header>
+    <div class="banner">
+      <img src="scholarly-html.svg" width="227" height="50" alt="Scholarly HTML logo">
+      <div class="status">Community Draft</div>
+    </div>
+    <h1>Documentație ARBNB</h1>
+  </header>
+
+  <div role="contentinfo">
+    <dl>
+      <dt>Autori</dt>
+      <dd>
+        <ul>
+          <li property="schema:author">Gavril Ștefan-Dorian</li>
+          <li property="schema:author">Pintecan Alexandru-Ionuț</li>
+          <li property="schema:author">Medeleanu Daria</li>
+          <li property="schema:author">Mihai Răzvan-Ionuț</li>
+        </ul>
+      </dd>
+      <dt>Licență</dt>
+      <dd>
+        <p>
+          Acest document este licențiat sub <a property="schema:license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a>.
+        </p>
+      </dd>
+      <dt>Data publicării</dt>
+      <dd><time property="schema:datePublished" datetime="2025-05-22">22 mai 2025</time></dd>
+    </dl>
+  </div>
+
+  <section typeof="sa:Abstract" id="abstract" role="doc-abstract">
+    <h2>Rezumat</h2>
+    <p property="schema:description">
+      Această documentație descrie procesul de proiectare a unei aplicații hibride (mobile + AR) dedicată rezervării și explorării locațiilor de cazare, cu accent pe experiența oferită utilizatorului.
+      Scopul aplicației este de a reduce incertitudinea în procesul de rezervare și de a furniza informații relevante exact atunci când utilizatorul are nevoie – înainte, în timpul și după check-in – printr-un sistem modern de interacțiune naturală.
+    </p>
+  </section>
+
+  <section id="introducere" role="doc-introduction">
+    <h2>1. Introducere</h2>
+    <p>
+      În era călătoriilor digitale, utilizatorii doresc transparență, acces rapid la informații și experiențe interactive. Aplicația propusă combină o platformă de booking (similară cu AirBnB sau Booking) cu un sistem AR care oferă suport vizual și contextual la locația fizică.
+    </p>
+    <p>
+      Soluția urmărește să îmbunătățească procesul de luare a deciziilor înainte de rezervare și să reducă fricțiunile la check-in și pe parcursul cazării.
+      De asemenea, aplicația va oferi utilizatorilor un ghid vizual pentru a naviga mai ușor în spațiul fizic, oferind indicații și informații despre obiectele din jur-precum instrucțiuni de la gazdă privind electrocasnicele sau locul unde se află cheile și unde să le lasăm la plecare.
+    </p>
+  </section>
+
+  <section id="design">
+    <h2>2. Decizii de Design și Pattern-uri de Interacțiune</h2>
+
+    <section id="design-principles">
+      <h3>2.1 Principii HCI utilizate</h3>
+      <ul>
+        <li><strong>Vizibilitatea statusului sistemului:</strong> aplicația oferă feedback vizual imediat în timpul rezervării și explorării AR.</li>
+        <li><strong>Control și libertate pentru utilizator:</strong> utilizatorii pot comuta între mobil și AR oricând, fără pierderea progresului.</li>
+        <li><strong>Consistență:</strong> design-ul menține o estetică unitară între aplicația mobilă și modul AR.</li>
+      </ul>
+    </section>
+
+    <section id="interaction-patterns">
+      <h3>2.2 Pattern-uri de interacțiune</h3>
+      <ul>
+        <li><strong>Card-based layout:</strong> pentru afișarea locațiilor în mobil.</li>
+        <li><strong>Overlay contextual în AR:</strong> afișarea notițelor gazdei direct în spațiu (ex: "aici este cheia").</li>
+        <li><strong>Walkthrough interactiv:</strong> pentru învățarea comenzilor (ex: cum pornești centrala, cum setezi alarma etc.)</li>
+      </ul>
+    </section>
+
+    <section id="design-motivation">
+      <h3>2.3 Motivația alegerilor</h3>
+      <p>
+        Am ales să combinăm mobil + AR pentru a păstra ușurința accesului și a adăuga valoare prin realitate augmentată doar în punctele critice – la sosire, în explorare și în folosirea obiectelor. Scopul a fost să evităm o aplicație "gadget" și să menținem utilitatea în centrul experienței.
+      </p>
+      <p>
+        De asemenea, acest duo (mobile+AR) permite o tranziție fluidă între planificare și acțiune, de la explorarea locației în aplicație la navigarea și interacțiunea cu spațiul fizic, optimizând experiența în locație fără personal fizic prezent, oferind instrucțiuni vizuale și suport în timp real, fără apeluri sau mesaje.
+      </p>
+      <p>
+        În plus, este scalabilă și modulară – funcționalitățile AR pot fi extinse pe baza contextului (ex: tururi ghidate, funcții pentru gazde), fără a afecta structura aplicației mobile de bază.
+        Aceste decizii sunt conform răspunsurilor adunate în acest <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhHUMsrw6yFugyCcWsvmI4QCtxvsZSNxwwqzfaJht7MqTzjg/viewform">chestionar</a>.
+      </p>
+    </section>
+  </section>
+
+  <section id="manual">
+    <h2>3. Manualul Utilizatorului</h2>
+
+    <section id="mobile-features">
+      <h3>3.1 Funcționalități principale (aplicație mobilă)</h3>
+      <ul>
+        <li>Căutare și filtrare locații după preț, rating, facilități</li>
+        <li>Vizualizare detalii (poze, video, recenzii, hartă)</li>
+        <li>Rezervare directă și contact cu gazda</li>
+        <li>Salvare în favorite și partajare</li>
+      </ul>
+    </section>
+
+    <section id="ar-features">
+      <h3>3.2 Funcționalități principale (modul AR)</h3>
+      <ul>
+        <li>Indicații vizuale în locație (chei, comutatoare, electrocasnice)</li>
+        <li>Instrucțiuni suprapuse: "Aici se aprinde lumina", "Nu trânti ușa"</li>
+        <li>Ghid de navigație în interior</li>
+      </ul>
+    </section>
+
+    <section id="technical-requirements">
+      <h3>3.3 Cerințe tehnice</h3>
+      <ul>
+        <li>Telefon Android/iOS cu aplicația ARBNB instalată</li>
+        <li>Ochelari/cască compatibilă AR (sau telefon cu modul AR activ)</li>
+        <li>Conexiune la internet</li>
+      </ul>
+    </section>
+  </section>
+
+  <section id="concluzii" role="doc-conclusion">
+    <h2>4. Concluzii și Posibilități de Extindere</h2>
+    <p>
+      Aplicația propusă demonstrează cum tehnologia AR poate fi folosită pragmatic, nu doar pentru divertisment, ci pentru creșterea clarității și confortului utilizatorilor în procesele de rezervare și cazare. 
+    </p>
+    <p>
+      Pe viitor, se pot adăuga funcționalități precum:
+    </p>
+    <ul>
+      <li>Recenzii AR lăsate de alți turiști (în locație)</li>
+      <li>Traducere AR automată a instrucțiunilor pentru turiști străini</li>
+      <li>Gamificarea explorării locației</li>
+      <li>Integrarea cu platforme extene existente- pentru sincronizarea datelor</li>
+      <li>Funcționalități de socializare între utilizatori (ex: grupuri de turiști)</li>
+      <li>Interacțiune vocală și AI</li>
+      <li>Funcționalități pentru gazde- mod special pentru gazde care le permite să adauge și să editeze notițe</li>
+      <li>Scanare AR a camerei pentru detectarea potențialelor pericole/obstacole (ex:Atenție! Priză nesigură.)</li>
+    </ul>
+  </section>
+
+  <section id="AI">
+    <h2>5. Utilizarea AI în documentație</h2>
+    <p>
+      Pentru realizarea acestei documentații am folosit modelul de AI oferit de OpenAI. Acesta a fost folosit pentru a propune mai multe posibilități de extindere ale aplicației. Mai jos se vor găsi prompturile folosite pentru a obține aceste rezultate:
+    </p>
+    <p>
+        <strong>Prompt 1:</strong> "pe langa Recenzii AR lăsate de alți turiști (în locație) ,Traducere AR automată a instrucțiunilor pentru turiști străini, Gamificarea explorării locației
+        ce poisibile extinderi ale aplicatiei se pot aduce?"
+    </p>
+    <p>
+        <strong>Prompt 2:</strong> "Am ales să combinăm mobil + AR pentru a păstra ușurința accesului și a adăuga valoare prin realitate augmentată doar în punctele critice – la sosire, în explorare și în folosirea obiectelor. Scopul a fost să evităm o aplicație "gadget" și să menținem utilitatea în centrul experienței.
+        aceasta este motivatia mea pe scurt pentru care am ales acest duo la realizarea aplicatiei. ce poti adauga?"
+    </p>
+  </section>
+
+  <section id="references" role="doc-bibliography">
+    <h2>6. Referințe</h2>
+    <ul>
+      <li property="schema:citation"><a href="https://w3c.github.io/scholarly-html/">Scholarly HTML</a></li>
+      <li property="schema:citation"><a href="https://schema.org/">Schema.org</a></li>
+      <li property="schema:citation"><a href="https://developers.google.com/ar">Google ARCore</a></li>
+    </ul>
+  </section>
+</body>
+</html>

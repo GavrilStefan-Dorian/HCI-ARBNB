@@ -1,0 +1,333 @@
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  max-width: 21cm;
+  margin: auto;
+  line-height: 1.6;
+  font-weight: 300;
+  font-family: Roboto, sans-serif;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+  color: #4b0061;
+  text-decoration: none;
+}
+a:active, a:hover {
+  outline: 0;
+  text-decoration: underline;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 1em 40px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.75em;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+  background: #f5f5f5;
+  padding: 1em;
+  border-radius: 3px;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+  cursor: pointer;
+}
+button::-moz-focus-inner,
+button input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+button[disabled],
+button html input[disabled] {
+  cursor: default;
+}
+
+select {
+  text-transform: none;
+}
+
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  cursor: pointer;
+}
+
+input {
+  line-height: normal;
+}
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type=search] {
+  box-sizing: content-box;
+}
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+legend {
+  border: 0;
+  padding: 0;
+}
+
+textarea {
+  overflow: auto;
+}
+
+optgroup {
+  font-weight: 700;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0.5em 1em;
+  border: 1px solid #ddd;
+}
+
+header > h1 {
+  margin: 0;
+  font-size: 3em;
+  padding-top: 4em;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+.banner > img {
+  height: 50px;
+}
+.banner > .status {
+  color: #fff;
+  background: #9400bf;
+  width: 350px;
+  padding: 10px;
+  text-align: right;
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.0375em;
+  color: #4b0061;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  margin-top: 2em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid #eee;
+}
+
+h3 {
+  margin-top: 1.5em;
+}
+
+h4 {
+  font-weight: 300;
+  font-size: 1.2em;
+  font-variant: small-caps;
+  margin: 2em 0 0.5em;
+}
+
+[role=contentinfo] {
+  margin: 2em 0;
+  padding: 1em;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+[role=contentinfo] dt {
+  font-weight: 700;
+  margin-top: 1em;
+}
+
+[role=contentinfo] dd {
+  margin-bottom: 1em;
+}
+
+section {
+  margin-bottom: 2em;
+}
+
+ul, ol {
+  padding-left: 2em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+figure img {
+  max-height: 300px;
+}
+
+figcaption {
+  margin-top: 0.5em;
+  font-style: italic;
+}
+
+@media screen and (max-width: 577px) {
+  .status {
+    width: auto;
+  }
+  
+  .banner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  body {
+    margin: 0 2em;
+  }
+  
+  header > h1 {
+    padding-top: 2em;
+    font-size: 2em;
+  }
+}

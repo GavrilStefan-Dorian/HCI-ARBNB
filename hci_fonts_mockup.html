@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Pairing Test</title>
+    <style>
+        /* Replace these with your actual fonts */
+        
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+        :root {
+            --logo-font: 'Oswald';  /* Replace with your logo font */
+            --ui-font: 'Noto Sans';          /* Replace with your UI font */
+            --primary-color: #307082;
+            --secondary-color: #ea9940;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--ui-font);
+            background: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 414px; /* iPhone 8 Plus width */
+            margin: 0 auto;
+            min-height: 100vh;
+        }
+        
+        /* Logo */
+        .logo {
+            font-family: var(--logo-font);
+            font-size: 28px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .logo-highlight {
+            color: var(--secondary-color);
+        }
+
+        /* Card */
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+        
+        /* Headers */
+        h1 {
+            font-family: var(--logo-font); /* Using logo font for main headers */
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        
+        h2 {
+            font-family: var(--ui-font);
+            font-size: 18px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        
+        /* Body text */
+        p {
+            font-family: var(--ui-font);
+            font-size: 15px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        /* Buttons */
+        .btn {
+            font-family: var(--ui-font);
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 15px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        /* Footer text */
+        .footer {
+            font-family: var(--ui-font);
+            font-size: 13px;
+            color: #999;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        /* Dark mode toggle */
+        .dark-mode {
+            background: #12212e;
+            color: #ece7dc;
+        }
+        
+        .dark-mode .card {
+            background: #2a2a2a;
+            color: #f0f0f0;
+        }
+        
+        .dark-mode p {
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        AR<span class="logo-highlight">BNB</span>
+    </div>
+    
+    <div class="card">
+        <h1>Welcome Back</h1>
+        <p>You have 3 new notifications and 1 upcoming appointment. Here's what's happening today:</p>
+        
+        <h2>Daily Summary</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+        
+        <button class="btn">View Details</button>
+    </div>
+    
+    <div class="card">
+        <h2>Recent Activity</h2>
+        <p>Completed: Task #1245</p>
+        <p>Received: Message from Sarah</p>
+        <p>Updated: Project timeline</p>
+    </div>
+    
+    <p class="footer">© 2024 YourApp. All rights reserved.</p>
+    
+    <script>
+        // Toggle dark mode to test contrast
+        document.addEventListener('click', function() {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
+
